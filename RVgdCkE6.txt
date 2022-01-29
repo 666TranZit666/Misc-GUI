@@ -1,0 +1,364 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local bluebar = Instance.new("Frame")
+local close = Instance.new("TextButton")
+local Frame = Instance.new("Frame")
+local file = Instance.new("TextButton")
+local Games = Instance.new("TextButton")
+local credit = Instance.new("TextButton")
+local minimise = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local scrpitIco = Instance.new("ImageLabel")
+local HotScript = Instance.new("TextButton")
+local Others = Instance.new("TextButton")
+local Script1 = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local x = Instance.new("TextButton")
+local Gamescript = Instance.new("ScrollingFrame")
+local Blox = Instance.new("TextButton")
+local Tower = Instance.new("TextButton")
+local BABFT = Instance.new("TextButton")
+local TranZit = Instance.new("TextButton")
+local _1 = Instance.new("TextLabel")
+local TextBox = Instance.new("TextBox")
+local Open = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+main.BorderColor3 = Color3.fromRGB(0, 0, 0)
+main.BorderSizePixel = 0
+main.Position = UDim2.new(0.084686771, 0, 0.103379712, 0)
+main.Size = UDim2.new(0, 683, 0, 349)
+
+bluebar.Name = "bluebar"
+bluebar.Parent = main
+bluebar.BackgroundColor3 = Color3.fromRGB(0, 170, 255)
+bluebar.BorderColor3 = Color3.fromRGB(0, 170, 255)
+bluebar.BorderSizePixel = 0
+bluebar.Size = UDim2.new(0, 683, 0, 2)
+
+close.Name = "close"
+close.Parent = main
+close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+close.BackgroundTransparency = 1.000
+close.Position = UDim2.new(0.942898989, 0, 0, 0)
+close.Size = UDim2.new(0, 39, 0, 45)
+close.Font = Enum.Font.Arial
+close.Text = "X"
+close.TextColor3 = Color3.fromRGB(255, 255, 255)
+close.TextSize = 20.000
+
+Frame.Parent = main
+Frame.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0, 0, 0.171919778, 0)
+Frame.Size = UDim2.new(0, 683, 0, 20)
+
+file.Name = "file"
+file.Parent = main
+file.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+file.BackgroundTransparency = 1.000
+file.BorderSizePixel = 0
+file.Position = UDim2.new(0, 0, 0.171919778, 0)
+file.Size = UDim2.new(0, 45, 0, 20)
+file.Font = Enum.Font.SourceSans
+file.Text = "File"
+file.TextColor3 = Color3.fromRGB(255, 255, 255)
+file.TextSize = 14.000
+
+Games.Name = "Games"
+Games.Parent = main
+Games.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Games.BackgroundTransparency = 1.000
+Games.BorderSizePixel = 0
+Games.Position = UDim2.new(0.166910693, 0, 0.171919778, 0)
+Games.Size = UDim2.new(0, 45, 0, 20)
+Games.Font = Enum.Font.SourceSans
+Games.Text = "Games"
+Games.TextColor3 = Color3.fromRGB(255, 255, 255)
+Games.TextSize = 15.000
+
+credit.Name = "credit"
+credit.Parent = main
+credit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+credit.BackgroundTransparency = 1.000
+credit.BorderSizePixel = 0
+credit.Position = UDim2.new(0.0834553465, 0, 0.171919778, 0)
+credit.Size = UDim2.new(0, 45, 0, 20)
+credit.Font = Enum.Font.SourceSans
+credit.Text = "Credit"
+credit.TextColor3 = Color3.fromRGB(255, 255, 255)
+credit.TextSize = 14.000
+
+minimise.Name = "minimise"
+minimise.Parent = main
+minimise.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+minimise.BackgroundTransparency = 1.000
+minimise.Position = UDim2.new(0.885797977, 0, 0, 0)
+minimise.Size = UDim2.new(0, 39, 0, 45)
+minimise.Font = Enum.Font.Arial
+minimise.Text = "-"
+minimise.TextColor3 = Color3.fromRGB(255, 255, 255)
+minimise.TextSize = 36.000
+
+TextLabel.Parent = main
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.353150576, 0, 0.00548000401, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 44)
+TextLabel.Font = Enum.Font.Arial
+TextLabel.Text = "SCRIPT HUB"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+scrpitIco.Name = "scrpitIco"
+scrpitIco.Parent = main
+scrpitIco.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+scrpitIco.Position = UDim2.new(0.0109758722, 0, 0.0240163729, 0)
+scrpitIco.Size = UDim2.new(0, 38, 0, 38)
+scrpitIco.Image = "http://www.roblox.com/asset/?id=8262436399"
+
+HotScript.Name = "Hot-Script"
+HotScript.Parent = main
+HotScript.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HotScript.BackgroundTransparency = 1.000
+HotScript.BorderSizePixel = 0
+HotScript.Position = UDim2.new(0.259150803, 0, 0.171919778, 0)
+HotScript.Size = UDim2.new(0, 45, 0, 20)
+HotScript.Font = Enum.Font.SourceSans
+HotScript.Text = "Hot-Script"
+HotScript.TextColor3 = Color3.fromRGB(255, 255, 255)
+HotScript.TextSize = 15.000
+
+Others.Name = "Others"
+Others.Parent = main
+Others.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Others.BackgroundTransparency = 1.000
+Others.BorderSizePixel = 0
+Others.Position = UDim2.new(0.363103956, 0, 0.171919778, 0)
+Others.Size = UDim2.new(0, 45, 0, 20)
+Others.Font = Enum.Font.SourceSans
+Others.Text = "Others"
+Others.TextColor3 = Color3.fromRGB(255, 255, 255)
+Others.TextSize = 15.000
+
+Script1.Name = "Script1"
+Script1.Parent = main
+Script1.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+Script1.BorderSizePixel = 0
+Script1.Position = UDim2.new(0, 0, 0.229226366, 0)
+Script1.Size = UDim2.new(0, 82, 0, 21)
+Script1.Font = Enum.Font.SourceSans
+Script1.Text = "Script1.lua        "
+Script1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Script1.TextSize = 14.000
+
+TextButton.Name = "+"
+TextButton.Parent = main
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.120058566, 0, 0.229226366, 0)
+TextButton.Size = UDim2.new(0, 20, 0, 21)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "+"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextSize = 14.000
+
+x.Name = "x"
+x.Parent = main
+x.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+x.BackgroundTransparency = 1.000
+x.BorderSizePixel = 0
+x.Position = UDim2.new(0.090775989, 0, 0.229226366, 0)
+x.Size = UDim2.new(0, 20, 0, 21)
+x.Font = Enum.Font.SourceSans
+x.Text = "x"
+x.TextColor3 = Color3.fromRGB(255, 255, 255)
+x.TextSize = 14.000
+
+Gamescript.Name = "Gamescript"
+Gamescript.Parent = main
+Gamescript.Active = true
+Gamescript.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+Gamescript.BorderSizePixel = 0
+Gamescript.Position = UDim2.new(0.791359901, 0, 0.2280415, 0)
+Gamescript.Size = UDim2.new(0, 142, 0, 269)
+Gamescript.ScrollBarThickness = 7
+
+Blox.Name = "Blox"
+Blox.Parent = Gamescript
+Blox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Blox.BackgroundTransparency = 1.000
+Blox.BorderSizePixel = 0
+Blox.Size = UDim2.new(0, 136, 0, 36)
+Blox.Font = Enum.Font.SourceSans
+Blox.Text = "Blox Hunt.lua"
+Blox.TextColor3 = Color3.fromRGB(255, 255, 255)
+Blox.TextSize = 14.000
+
+Tower.Name = "Tower"
+Tower.Parent = Gamescript
+Tower.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tower.BackgroundTransparency = 1.000
+Tower.BorderSizePixel = 0
+Tower.Position = UDim2.new(0, 0, 0.108882524, 0)
+Tower.Size = UDim2.new(0, 136, 0, 36)
+Tower.Font = Enum.Font.SourceSans
+Tower.Text = "Tower Of Hell.lua"
+Tower.TextColor3 = Color3.fromRGB(255, 255, 255)
+Tower.TextSize = 14.000
+
+BABFT.Name = "BABFT"
+BABFT.Parent = Gamescript
+BABFT.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BABFT.BackgroundTransparency = 1.000
+BABFT.BorderSizePixel = 0
+BABFT.Position = UDim2.new(0.0211267602, 0, 0.0515759364, 0)
+BABFT.Size = UDim2.new(0, 136, 0, 36)
+BABFT.Font = Enum.Font.SourceSans
+BABFT.Text = "Build A Baot.lua"
+BABFT.TextColor3 = Color3.fromRGB(255, 255, 255)
+BABFT.TextSize = 14.000
+
+TranZit.Name = "TranZit"
+TranZit.Parent = Gamescript
+TranZit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TranZit.BackgroundTransparency = 1.000
+TranZit.BorderSizePixel = 0
+TranZit.Position = UDim2.new(0, 0, 0.16045846, 0)
+TranZit.Size = UDim2.new(0, 136, 0, 36)
+TranZit.Font = Enum.Font.SourceSans
+TranZit.Text = "Tranzit.lua"
+TranZit.TextColor3 = Color3.fromRGB(255, 255, 255)
+TranZit.TextSize = 14.000
+
+_1.Name = "1"
+_1.Parent = main
+_1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_1.BackgroundTransparency = 1.000
+_1.BorderSizePixel = 0
+_1.Position = UDim2.new(0, 0, 0.289398283, 0)
+_1.Size = UDim2.new(0, 45, 0, 15)
+_1.Font = Enum.Font.SourceSans
+_1.Text = "1"
+_1.TextColor3 = Color3.fromRGB(255, 255, 255)
+_1.TextSize = 14.000
+
+TextBox.Parent = main
+TextBox.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.052708637, 0, 0.289398283, 0)
+TextBox.Size = UDim2.new(0, 484, 0, 247)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextSize = 14.000
+
+Open.Name = "Open"
+Open.Parent = ScreenGui
+Open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Open.BackgroundTransparency = 1.000
+Open.BorderSizePixel = 0
+Open.Position = UDim2.new(0.261020839, 0, 0, 0)
+Open.Size = UDim2.new(0, 200, 0, 29)
+Open.Visible = false
+Open.Font = Enum.Font.SourceSans
+Open.Text = "Open"
+Open.TextColor3 = Color3.fromRGB(0, 0, 0)
+Open.TextSize = 28.000
+
+-- Scripts:
+
+local function MGIYSUH_fake_script() -- close.LocalScript 
+	local script = Instance.new('LocalScript', close)
+
+	close.MouseButton1Down:connect(function()
+		main.Visible = false
+		Open.Visible = true
+	end)
+end
+coroutine.wrap(MGIYSUH_fake_script)()
+local function UYAZPJ_fake_script() -- credit.Script 
+	local script = Instance.new('Script', credit)
+
+	credit.MouseButton1Down:connect(function()
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "Credit";
+			Text = "Made By Lazar";
+			Icon = "http://www.roblox.com/asset/?id=8262436399";
+			Duration = "10";
+		})
+	end)
+end
+coroutine.wrap(UYAZPJ_fake_script)()
+local function TMIS_fake_script() -- Blox.LocalScript 
+	local script = Instance.new('LocalScript', Blox)
+
+	Blox.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet(('https://pastebin.com/raw/0PgPkk8C'),true))()
+	end)
+end
+coroutine.wrap(TMIS_fake_script)()
+local function LZLI_fake_script() -- Tower.LocalScript 
+	local script = Instance.new('LocalScript', Tower)
+
+	Tower.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet(('https://pastebin.com/raw/bFWqm0f6'),true))()
+	end)
+end
+coroutine.wrap(LZLI_fake_script)()
+local function FNAYQ_fake_script() -- BABFT.LocalScript 
+	local script = Instance.new('LocalScript', BABFT)
+
+	BABFT.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet(('https://pastebin.com/raw/KPrPKWZH'),true))()
+	end)
+end
+coroutine.wrap(FNAYQ_fake_script)()
+local function OSTXTS_fake_script() -- TranZit.LocalScript 
+	local script = Instance.new('LocalScript', TranZit)
+
+	TranZit.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet(('https://pastebin.com/raw/4XiXk69v'),true))()
+	end)
+end
+coroutine.wrap(OSTXTS_fake_script)()
+local function ZINFG_fake_script() -- Open.LocalScript 
+	local script = Instance.new('LocalScript', Open)
+
+	Open.MouseButton1Down:connect(function()
+		main.Visible = true
+		Open.Visible = false
+	end)
+end
+coroutine.wrap(ZINFG_fake_script)()
+local function LHGAU_fake_script() -- ScreenGui.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	frame = script.Parent.main -- Take out {}s, and put name of frame
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Script Hub";
+		Text = "This is the main hub to every GUI";
+		Icon = "http://www.roblox.com/asset/?id=8262436399";
+		Duration = "10";
+	})
+end
+coroutine.wrap(LHGAU_fake_script)()
