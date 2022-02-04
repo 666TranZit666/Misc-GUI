@@ -356,7 +356,7 @@ local function LHGAU_fake_script() -- ScreenGui.LocalScript
 	frame.Selectable = true
 	game.StarterGui:SetCore("SendNotification", {
 		Title = "Script Hub";
-		Text = "This is the main hub to every GUI";
+		Text = "This is the main hub to everything GUI";
 		Icon = "http://www.roblox.com/asset/?id=8262436399";
 		Duration = "10";
 	})
