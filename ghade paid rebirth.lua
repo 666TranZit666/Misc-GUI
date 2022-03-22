@@ -1,1 +1,7 @@
-local r = ("03/304/402/234/204/304/750/406/694/796/964/") local rsg = ("03/304/402/234/204/304/750/406/694/796/964/464/342/546/314/64/1/463/857/478/476") amount_of_msgs = 5 for i = 1, amount_of_msgs do game:GetService("\82\101\112\108\105\99\97\116\101\100\83\116\111\114\97\103\101").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("\82\101\112\111\114\116\32\109\101\32\105\109\32\104\97\99\107\105\110\103", "\65\108\108") end wait(25) game.Players.LocalPlayer:Kick() local rsq = ("03/304/402/234/204/304/750/406/694/796/964/464/342/546/314/64/1/463/857/478/476/424/245/256/365/246/245/")
+print 'danger lvl loading'
+wait(1)
+print 'Done'
+game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.Collapse.Visible = true
+warn 'welcome hacker have fun'
+print 'mining script started you fucker'
+warn ' your a mother fuckin hacker'
