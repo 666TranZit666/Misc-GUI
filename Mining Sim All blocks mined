@@ -57,7 +57,7 @@ UIAspectRatioConstraint.Parent = Logo
 local function HKNZLT_fake_script() -- Amount.LocalScript 
 	local script = Instance.new('LocalScript', Amount)
 
-	while wait(1)do
+	while wait()do
 		--the leaderstart will already load
 		script.Parent.Text=""..game:GetService("Players").LocalPlayer.leaderstats["Blocks Mined"].Value
 	end
