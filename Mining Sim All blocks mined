@@ -1,0 +1,65 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Blocks = Instance.new("ImageLabel")
+local Amount = Instance.new("TextLabel")
+local Logo = Instance.new("ImageLabel")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+
+--Properties:
+
+Blocks.Name = "Blocks"
+Blocks.Parent = game.Players.LocalPlayer.PlayerGui.ScreenGui.StatsFrame
+Blocks.Active = true
+Blocks.BackgroundColor3 = Color3.fromRGB(248, 248, 248)
+Blocks.BackgroundTransparency = 1.000
+Blocks.Position = UDim2.new(0.0, 0, 1.6, 5)
+Blocks.Size = UDim2.new(1, 0, 0.5, 0)
+Blocks.ZIndex = 2
+Blocks.Image = "rbxassetid://1511196841"
+Blocks.ImageColor3 = Color3.fromRGB(39, 180, 255)
+Blocks.ScaleType = Enum.ScaleType.Slice
+Blocks.SliceCenter = Rect.new(9, 11, 91, 89)
+
+Amount.Name = "Amount"
+Amount.Parent = Blocks
+Amount.AnchorPoint = Vector2.new(0, 0.5)
+Amount.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Amount.BackgroundTransparency = 1.000
+Amount.Position = UDim2.new(0.25, 0, 0.5, 0)
+Amount.Size = UDim2.new(0.680000007, 0, 0.699999988, 0)
+Amount.ZIndex = 7
+Amount.Font = Enum.Font.ArialBold
+Amount.Text = "Loading..."
+Amount.TextColor3 = Color3.fromRGB(255, 255, 255)
+Amount.TextScaled = true
+Amount.TextSize = 14.000
+Amount.TextStrokeTransparency = 0.500
+Amount.TextWrapped = true
+
+Logo.Name = "Logo"
+Logo.Parent = Blocks
+Logo.AnchorPoint = Vector2.new(0, 0.5)
+Logo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Logo.BackgroundTransparency = 1.000
+Logo.Position = UDim2.new(0, 5, 0.5, -2)
+Logo.Rotation = 10.000
+Logo.Size = UDim2.new(1, 5, 0.75, 0)
+Logo.ZIndex = 2
+Logo.Image = "rbxassetid://1418722833"
+
+UIAspectRatioConstraint.Parent = Logo
+
+-- Scripts:
+
+local function HKNZLT_fake_script() -- Amount.LocalScript 
+	local script = Instance.new('LocalScript', Amount)
+
+	while wait(1)do
+		--the leaderstart will already load
+		script.Parent.Text=""..game:GetService("Players").LocalPlayer.leaderstats["Blocks Mined"].Value
+	end
+end
+coroutine.wrap(HKNZLT_fake_script)()
