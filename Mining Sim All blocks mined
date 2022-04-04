@@ -1,3 +1,4 @@
+game.Players.LocalPlayer.PlayerGui.ScreenGui.StatsFrame.Blocks:Destroy()
 -- Gui to Lua
 -- Version: 3.2
 
