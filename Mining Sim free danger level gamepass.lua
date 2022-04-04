@@ -1,7 +1,1 @@
-print 'danger lvl loading'
-wait(1)
-print 'Done'
-game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.Collapse.Visible = true
-warn 'welcome hacker have fun'
-print 'mining script started you fucker'
-warn ' your a mother fuckin hacker'
+\103\97\109\101\58\71\101\116\83\101\114\118\105\99\101\40\34\80\108\97\121\101\114\115\34\41\46\76\111\99\97\108\80\108\97\121\101\114\46\80\108\97\121\101\114\71\117\105\46\83\99\114\101\101\110\71\117\105\46\67\111\108\108\97\112\115\101\46\86\105\115\105\98\108\101\32\61\32\116\114\117\101\10
